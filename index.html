@@ -52,6 +52,7 @@
                      <li><a href="#flutter-version">Flutter Version</a></li>
                      <li><a href="#change-application-name">Change Application Name</a></li>
                      <li><a href="#changing-package-name">Changing Package name</a></li>
+                     <li><a href="#change-base-url">Change Base URL</a></li>
                      <li><a href="#Android-Customization">Flutter Customization</a></li>
                      <li><a href="#sign-your-release-build">Create Release Build</a></li>
                      <li>
@@ -206,8 +207,22 @@
                      </ul>
                   </ol>
                   <p>After following these steps, your Flutter application should have the updated package name throughout the project. Make sure to update any dependencies or configurations that reference the old package name as well.</p>
+                  <section id="change-base-url">
+                     <h3><strong>F). <u>Change Base URL</u></strong></h3>
+                  <p><br>Change the URL, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the URL:		
+                  </p>
+                  <ol>
+                     <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
+                     <li>Locate the <strong>lib</strong> folder in the root directory of your Flutter project.</li>
+                     <li>Open the <strong>Util</strong>  folder and find the <strong>StaticData.dart </strong> File. By default, it should be something like <strong>apiBaseUrl: "https://www.google.com/"</strong>.</li>
+                     <li>Change the value of the <strong>apiBaseUrl </strong> field to your desired URL. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>apiBaseUrl: "Your Web URL"/</strong>.</li>
+                     <li>Save the <strong>StaticData.dart</strong> file.</li>
+                  </ol>
+                  <p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
+                  </section>
+                  <br>
                   <section id="Android-Customization">
-                     <h3><strong>F). <u>Flutter Customization</u></strong></h3>
+                     <h3><strong>G). <u>Flutter Customization</u></strong></h3>
                      <br>
                      <h5><strong>1.<u>Change Launcher icon</u></strong></h5>
                      <p>Change the launcher icon in <code>Replace the default app icons:<br>
@@ -238,7 +253,7 @@
                   </br>    
                   <br>
                   <section id="sign-your-release-build">
-                     <h3><strong>G).<u>Sign your release build</u></strong></h3>
+                     <h3><strong>H).<u>Sign your release build</u></strong></h3>
                      <br>
                      <p>To sign a release build for Garage Master App, you can follow these steps:
                         <br>
@@ -270,7 +285,7 @@
                      </p>
                   </section>
                   <section id="garage-app-pages">
-                     <h3><strong>H).<u>Garage Master App Overview</u></strong></h3>
+                     <h3><strong>I).<u>Garage Master App Overview</u></strong></h3>
                      <br>
                      <section id="fronted-login">
                         <h3><strong><u>Login Screen:</u></strong></h3>
@@ -292,16 +307,6 @@
                         <img alt="" src="images/2.png" height = "550" width = "300">
                         <img alt="" src="images/3.png" height = "550" width = "300">
 						
-						<p><br>Change the URL, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the URL:		
-                  </p>
-                  <ol>
-                     <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
-                     <li>Locate the <strong>lib</strong> folder in the root directory of your Flutter project.</li>
-                     <li>Open the <strong>Util</strong>  folder and find the <strong>StaticData.dart </strong> File. By default, it should be something like <strong>apiBaseUrl: "https://www.google.com/"</strong>.</li>
-                     <li>Change the value of the <strong>apiBaseUrl </strong> field to your desired URL. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>apiBaseUrl: "Your Web URL"/</strong>.</li>
-                     <li>Save the <strong>StaticData.dart</strong> file.</li>
-                  </ol>
-                  <p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
                      </section>
                      <br>
                      <section id = "vehical-detaiils">
